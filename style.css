@@ -1,0 +1,49 @@
+body
+{
+    background-image: radial-gradient(circle, green, yellow, purple);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main_div
+{
+    text-align: center; 
+    color: #282828;
+}
+
+h1.main_div
+{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#humpty_dumpty
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 400px;
+    height: 250px;
+    animation-name: spinning;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#ciccio_img
+{
+    border:4px solid rgb(28, 28, 28);
+}
+
+.audio_section
+{
+    text-align: center;
+}
+
+@keyframes spinning {
+    0% {transform: rotate(360deg);}
+    50% {left:0%; top:50%;}
+    100% {left:0%; top:0%}
+  }
